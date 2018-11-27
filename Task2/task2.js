@@ -6,13 +6,9 @@ while (!isFinite(firstNumber) || !((firstNumber ^ 0) === firstNumber)) {
     firstNumber = +prompt('Enter the first number:');
 }
 
-console.log(firstNumber);
-
 while (!isFinite(secondNumber) || !((secondNumber ^ 0) === secondNumber)) {
     secondNumber = +prompt('Enter the second number:');
 }
-
-console.log(secondNumber);
 
 if (firstNumber <= secondNumber) {
     for (var i = firstNumber; i <= secondNumber; i++) {
