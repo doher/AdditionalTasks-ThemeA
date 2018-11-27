@@ -1,6 +1,5 @@
-var monthName = prompt('Enter month name:').toLowerCase;
+var monthName = prompt('Enter month name:').toLowerCase();
 console.log(monthName);
-
 
 switch (monthName) {
     case 'december':    
