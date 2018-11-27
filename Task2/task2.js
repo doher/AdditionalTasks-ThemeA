@@ -6,12 +6,16 @@ while (!isFinite(firstNumber) || !((firstNumber ^ 0) === firstNumber)) {
     firstNumber = +prompt('Enter the first number:');
 }
 
+console.log(firstNumber);
+
 while (!isFinite(secondNumber) || !((secondNumber ^ 0) === secondNumber)) {
     secondNumber = +prompt('Enter the second number:');
 }
 
+console.log(secondNumber);
+
 if (firstNumber <= secondNumber) {
-    for (var i = (secondNumber - firstNumber); i <= secondNumber; i++) {
+    for (var i = firstNumber; i <= secondNumber; i++) {
         sum += i;
     }
     console.log('Sum of numbers = ' + sum);
