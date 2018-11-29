@@ -94,117 +94,117 @@ if (numReverse[1]) {
         case '1':
             switch (numReverse[0]) {
                 case '0':
-                    message = 'десять';
+                    message += 'десять';
                     break;
 
                 case '1':
-                    message = 'одиннадцать';
+                    message += 'одиннадцать';
                     break;
 
                 case '2':
-                    message = 'двенадцать';
+                    message += 'двенадцать';
                     break;
 
                 case '3':
-                    message = 'тринадцать';
+                    message += 'тринадцать';
                     break;
 
                 case '4':
-                    message = 'четырнадцать';
+                    message += 'четырнадцать';
                     break;
 
                 case '5':
-                    message = 'пятнадцать';
+                    message += 'пятнадцать';
                     break;
 
                 case '6':
-                    message = 'шестнадцать';
+                    message += 'шестнадцать';
                     break;
 
                 case '7':
-                    message = 'семнадцать';
+                    message += 'семнадцать';
                     break;
 
                 case '8':
-                    message = 'восемнадцать';
+                    message += 'восемнадцать';
                     break;
 
                 case '9':
-                    message = 'девятнадцать';
+                    message += 'девятнадцать';
                     break;
             }
             break;
 
         case '2':
-            message = 'двадцать';
+            message += 'двадцать ';
             break;
 
         case '3':
-            message = 'тридцать';
+            message += 'тридцать ';
             break;
 
         case '4':
-            message = 'сорок';
+            message += 'сорок ';
             break;
 
         case '5':
-            message = 'пятьдесят';
+            message += 'пятьдесят ';
             break;
 
         case '6':
-            message = 'шестьдесят';
+            message += 'шестьдесят ';
             break;
 
         case '7':
-            message = 'семьдесят';
+            message += 'семьдесят ';
             break;
 
         case '8':
-            message = 'восемьдесят';
+            message += 'восемьдесят ';
             break;
 
         case '9':
-            message = 'девяносто';
+            message += 'девяносто ';
             break;
     }
 }
 
-if (numReverse[0] && (numReverse[0] !== 1)) {
+if (numReverse[0] && (numReverse[1] !== '1')) {
     switch (numReverse[0]) {
         case '1':
-            message = 'один';
+            message += 'один';
             break;
 
         case '2':
-            message = 'два';
+            message += 'два';
             break;
 
         case '3':
-            message = 'три';
+            message += 'три';
             break;
 
         case '4':
-            message = 'четыре';
+            message += 'четыре';
             break;
 
         case '5':
-            message = 'пять';
+            message += 'пять';
             break;
 
         case '6':
-            message = 'шесть';
+            message += 'шесть';
             break;
 
         case '7':
-            message = 'семь';
+            message += 'семь';
             break;
 
         case '8':
-            message = 'восемь';
+            message += 'восемь';
             break;
 
         case '9':
-            message = 'девять';
+            message += 'девять';
             break;
     }
 }
