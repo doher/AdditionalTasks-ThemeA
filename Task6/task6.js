@@ -14,13 +14,17 @@ while (!isFinite(numberOfMonths) || !((numberOfMonths ^ 0) === numberOfMonths) |
     numberOfMonths = +prompt('Введите количество месяцев на хранение в банке:');
 }
 
+var count = 1;
+
 while (numberOfMonths) {
     profitPerMonth = depositAmount * (interestRate / 100) / daysInYear * daysInMonth;
     depositAmount += profitPerMonth;
     profitAtTheEnd += profitPerMonth;
     numberOfMonths--;
-
-    console.log('Прибыль с депозита за каждый месяц: ', profitPerMonth.toFixed(2));
+    
+    console.log('Прибыль с депозита за ' + count + '-й месяц: ', profitPerMonth.toFixed(2));
+    
+    count++;
 }
 
 console.log('Прибыль с депозита за весь срок: ', profitAtTheEnd.toFixed(2));
