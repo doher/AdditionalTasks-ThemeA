@@ -1,5 +1,8 @@
 var numberOfPeople;
-var ageArray = [];
+var minAge;
+var maxAge = 0;
+var averageAge = 0;
+var sumAge = 0;
 
 while (!isFinite(numberOfPeople) || !(numberOfPeople ^ 0 === numberOfPeople) || (numberOfPeople < 0)) {
     numberOfPeople = +prompt('Сколько людей посетило поликлинику за день?');
@@ -12,12 +15,18 @@ for (var i = 1; i <= numberOfPeople; i++) {
         age = +prompt('Введите возраст ' + i + '-го посетителя:');
     }
 
-    ageArray.push(age);
+    sumAge += age;
+
+    if (age > maxAge) {
+        maxAge = age;
+    }
+
+    if (!isFinite(minAge) || (age < minAge)) {
+        minAge = age;
+    }
 }
 
-var maxAge = Math.max.apply(null, ageArray);
-var minAge = Math.min.apply(null, ageArray);
-var averageAge = ageArray.reduce((a, b) => a + b, 0) / ageArray.length;
+averageAge = sumAge / numberOfPeople;
 
 console.log('Количество людей, которые посетили поликлинику сегодня: ' + numberOfPeople);
 console.log('Максимальный возраст посетителя: ' + maxAge);
